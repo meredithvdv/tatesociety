@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic,900' rel='stylesheet' type='text/css'>
+<style> 
+.textbox { 
+    border: 1px solid #848484; 
+    -webkit-border-radius: 30px; 
+    -moz-border-radius: 30px; 
+    border-radius: 30px; 
+    outline:0; 
+    height:25px; 
+    width: 275px; 
+    padding-left:10px; 
+    padding-right:10px; 
+  } 
+</style> 
+	</head>
+	<body style="font-style:normal;">
+      <center /><h2><a href="2018 Tate Application.pdf" style="display:" target="_blank" download>Click here to download the application</a></h2><br>
+      <form action="upload.php" method="post" style='color: white;height:100%;' enctype="multipart/form-data">
+        
+      <style>
+      h2 {display:inline-block;padding:0px;margin:0px;margin-right: 20px; font-weight: 400;}
+      input {display:inline-block; position: relative; top: 10%; transform: translateY(-10%); padding-left: 30px;}
+      </style>
+
+        <h2>Full Name: </h2>
+        <input style="" class="textbox" type="text" required="true" autofocus placeholder="John Appleseed" contenteditable="true" name="name" id="name">
+        <div style="height: 25px;"></div>
+
+        <h2>Gender: </h2>
+        <input type="radio" required="true" name="gender" id="gender" value="male" checked> Male
+        <input style="margin-left: 50px;" type="radio" required="true" name="gender" id="gender" value="female"> Female
+        <div style="height: 25px;"></div>
+
+        <h20>81X Number: </h2>
+        <input class="textbox" type="number" required="true" placeholder="811111111" value="ID Number" name="number" contenteditable="true" id="number">
+        <div style="height: 25px;"></div>
+        
+        <h2>Email Address: </h2>
+        <input class="textbox" type="email" required="true" placeholder="email@example.com" method="post" name="email" contenteditable="true" id="email">
+        <div style="height: 25px;"></div>
+
+        <center /><h2>Information Page:</h2>
+        <input type="file" class='upload' name="infopage" id="infopage" style='color:white; padding: 3px; padding-left: 30px; margin: 0px;'>
+        <div style="height: 25px;"></div>
+
+        <center /><h2>Response 1:</h2>
+        <input type="file" class='upload' name="response1" id="response1" style='color:white; padding: 3px; padding-left: 30px; margin: 0px;'>
+        <div style="height: 25px;"></div>
+
+        <center /><h2>Response 2:</h2>
+        <input type="file" class='upload' name="response2" id="response2" style='color:white; padding: 3px; padding-left: 30px; margin: 0px;'>
+        <div style="height: 25px;"></div>
+
+        <h2>Verification: </h2>
+        <input class="textbox" type="text" required="true" placeholder="Your Initials" method="post" name="initials" contenteditable="true" id="initials">
+        <div style="height: 25px;"></div>
+
+        <input type="submit" class="textbox" style="width:auto;" value="Submit Application" name="submit">
+      </form>
+	</body>
+</html>

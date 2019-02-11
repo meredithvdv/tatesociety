@@ -1,0 +1,5 @@
+#!/bin/sh
+#. ../../ugawebhosting/wrappers/default_vars
+#. ../../ugawebhosting/wrappers/default_script
+export PHPRC="/usr/www/tatesociety/etc"
+exec /usr/bin/php-cgi $@
